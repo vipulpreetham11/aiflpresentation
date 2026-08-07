@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFIL | Concept Proof</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <strong>AFIL</strong> <span class="badge">Proof of Concept</span>
+            </div>
+            <a href="http://localhost:3000/demo" class="btn btn-sm btn-dark">Live Demo</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container text-center fade-up">
+            <h1 class="hero-title">Adaptive Financial<br>Intelligence Layer</h1>
+            <p class="hero-description">An explainable, multi-agent AI architecture designed to verify financial intent, not just identity. Built for the Quantum Arena 36-Hour Hackathon by Team Byte Busters.</p>
+            <div class="hero-actions">
+                <a href="http://localhost:3000/demo" class="btn btn-dark btn-lg">Experience Live Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: The Problem -->
+    <section class="section bg-light border-bottom">
+        <div class="container">
+            <div class="text-center fade-up mb-8">
+                <h2 class="section-title">The Problem</h2>
+                <p class="section-text mx-auto">Current Fraud Detection Isn't Enough</p>
+            </div>
+            
+            <div class="grid grid-2 fade-up delay-1">
+                <div class="challenge-card">
+                    <i class="ph ph-shield-check text-accent icon-lg"></i>
+                    <h4>Traditional checks</h4>
+                    <p>Traditional authentication verifies identity, not financial intent. Even when all security checks pass, customers can still be manipulated into authorizing fraudulent payments.</p>
+                </div>
+                <div class="challenge-card">
+                    <i class="ph ph-user-minus text-accent icon-lg"></i>
+                    <h4>Real attacker</h4>
+                    <p>Attackers exploit human trust instead of technical vulnerabilities. The customer becomes the attacker's tool, making the payment appear completely legitimate.</p>
+                </div>
+                <div class="challenge-card">
+                    <i class="ph ph-bank text-accent icon-lg"></i>
+                    <h4>Approval logic</h4>
+                    <p>Most payment systems stop after authentication. Once identity is verified, the transaction is usually approved without evaluating whether the payment matches the customer's normal financial behaviour.</p>
+                </div>
+                <div class="challenge-card">
+                    <i class="ph ph-warning-circle text-accent icon-lg"></i>
+                    <h4>Common scams</h4>
+                    <p>These scams trick users into transferring money directly. Examples include investment fraud, fake customer support, fake KYC updates, and digital arrest scams.</p>
+                </div>
+            </div>
+
+            <div class="highlight-box fade-up delay-2 mt-8">
+                <i class="ph ph-info text-accent icon-md"></i>
+                <p>The customer completes authentication — but the intent is coerced. Detection needs context, not just credentials.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Our Idea -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center fade-up mb-8">
+                <h2 class="section-title">Our Idea</h2>
+                <p class="section-text mx-auto">Introducing AFIL</p>
+                <div class="concept-shift mt-4">
+                    <p class="text-lg">Instead of asking <strong>"Is this the account owner?"</strong><br>AFIL asks <strong>"Does this payment make financial sense for this customer?"</strong></p>
+                </div>
+            </div>
+
+            <div class="idea-steps fade-up delay-1">
+                <div class="idea-step">
+                    <div class="step-badge">Payment Initiated</div>
+                    <p>Customer initiates a digital payment through any banking or payment application.</p>
+                </div>
+                <div class="idea-step">
+                    <div class="step-badge">AFIL Evaluates</div>
+                    <p>AFIL gathers financial, behavioural, historical, merchant, device, and contextual evidence before any approval is made.</p>
+                </div>
+                <div class="idea-step">
+                    <div class="step-badge">Signal Issued</div>
+                    <p>Each intelligence module independently measures trust and risk, producing explainable evidence instead of a single black-box prediction.</p>
+                </div>
+                <div class="idea-step">
+                    <div class="step-badge">Decision: Proceed</div>
+                    <p>The reasoning engine recommends the safest action: Approve, Warn, Hold, or Reject.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Example Scenario -->
+    <section class="section bg-light border-top border-bottom">
+        <div class="container">
+            <div class="text-center fade-up mb-8">
+                <h2 class="section-title">Example Scenario</h2>
+                <p class="section-text mx-auto">How AFIL Stops a Scam</p>
+            </div>
+
+            <div class="scenario-visual fade-up delay-1">
+                <div class="scenario-context">
+                    <p><strong>Baseline:</strong> Typical transfers ₹500–₹2,000 to known contacts.</p>
+                    <p><strong>Today:</strong> Single ₹95,000 transfer to a new recipient and unknown merchant.</p>
+                </div>
+                
+                <div class="highlight-box accent-box my-6">
+                    <i class="ph ph-shield-warning icon-md"></i>
+                    <p>AFIL intervenes with an explainable warning before funds leave the account.</p>
+                </div>
+
+                <div class="grid grid-2 scenario-compare mt-8">
+                    <div class="scenario-col">
+                        <span class="step-num">01</span>
+                        <h4 class="mt-2 mb-2">Traditional system</h4>
+                        <p class="text-muted">Identity verified. Transaction approved because authentication succeeded.</p>
+                    </div>
+                    <div class="scenario-col">
+                        <span class="step-num">02</span>
+                        <h4 class="mt-2 mb-2">AFIL</h4>
+                        <p class="text-muted">Compares the payment with historical knowledge, identifies multiple behavioural deviations, explains the risk, and warns the customer before money leaves the account.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Why AFIL is Different -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center fade-up mb-8">
+                <h2 class="section-title">Why AFIL is Different</h2>
+                <p class="section-text mx-auto">Side-by-side comparison</p>
+            </div>
+
+            <div class="comparison-table-wrapper fade-up delay-1">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Traditional Fraud Detection</th>
+                            <th class="highlight-col">AFIL (Adaptive Financial Intelligence Layer)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Checks identity</td>
+                            <td class="highlight-col">Understands financial behaviour</td>
+                        </tr>
+                        <tr>
+                            <td>Looks at transaction only</td>
+                            <td class="highlight-col">Analyzes complete payment context</td>
+                        </tr>
+                        <tr>
+                            <td>Rule-based</td>
+                            <td class="highlight-col">AI-powered decision intelligence</td>
+                        </tr>
+                        <tr>
+                            <td>Limited explanation</td>
+                            <td class="highlight-col">Provides explainable recommendations</td>
+                        </tr>
+                        <tr>
+                            <td>Approves if authentication passes</td>
+                            <td class="highlight-col">Evaluates financial intent before approval</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: How AFIL Thinks (Full Pipeline) -->
+    <section class="section bg-light border-top border-bottom">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="label text-accent">Architecture</div>
+                <h2 class="section-title">How AFIL Thinks</h2>
+                <p class="section-text mx-auto">The complete intelligence pipeline, evaluating intent in milliseconds.</p>
+            </div>
+
+            <div class="vertical-timeline fade-up delay-1">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="ph ph-lightning"></i></div>
+                    <div class="timeline-content">
+                        <h3>1. Payment</h3>
+                        <p>The trigger. A transaction request arrives in real-time.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="ph ph-database"></i></div>
+                    <div class="timeline-content">
+                        <h3>2. Knowledge Engine</h3>
+                        <p>Because decisions require context. It instantly loads the historical state of the user, device, and merchant.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="ph ph-chart-line-up"></i></div>
+                    <div class="timeline-content">
+                        <h3>3. Feature Engineering</h3>
+                        <p>Because raw data is useless. It transforms timestamps and amounts into behavioural velocities and graph connections.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon highlight"><i class="ph ph-cpu"></i></div>
+                    <div class="timeline-content">
+                        <h3 class="text-accent">4. Seven Intelligence Engines</h3>
+                        <p>Because no single model sees the whole picture. Specialized AI evaluates different angles simultaneously.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="ph ph-arrows-merge"></i></div>
+                    <div class="timeline-content">
+                        <h3>5. Evidence Fusion</h3>
+                        <p>Because AI outputs are incompatible. It normalizes probabilities, anomalies, and graph scores into a universal language.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="ph ph-users-three"></i></div>
+                    <div class="timeline-content">
+                        <h3>6. Consensus</h3>
+                        <p>Because opinions must be weighed. It calculates trust based on which engines are historically accurate.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="ph ph-git-merge"></i></div>
+                    <div class="timeline-content">
+                        <h3>7. Conflict Resolution</h3>
+                        <p>Because AI disagrees. It gracefully handles edge cases where engines provide conflicting evidence.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="ph ph-shield-check"></i></div>
+                    <div class="timeline-content">
+                        <h3>8. Business Policy</h3>
+                        <p>Because humans need the final say. Deterministic rules act as an emergency brake for extreme anomalies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon solid"><i class="ph ph-check-circle"></i></div>
+                    <div class="timeline-content">
+                        <h3>9. Decision</h3>
+                        <p>The verdict. Approved, Denied, or Challenged—delivered with full explainability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Why Seven AI Engines? -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center fade-up mb-8">
+                <div class="label text-accent">Multi-Agent AI</div>
+                <h2 class="section-title">Why Seven Engines?</h2>
+                <p class="section-text mx-auto">In a hospital, a single doctor doesn't diagnose everything. AFIL works exactly the same way. Multiple independent, specialized opinions are mathematically more resilient than one giant black box.</p>
+            </div>
+
+            <div class="engines-grid fade-up delay-1">
+                <div class="engine-card">
+                    <h4>Behavior</h4>
+                    <p>Analyzes the velocity and cadence of actions.</p>
+                </div>
+                <div class="engine-card">
+                    <h4>Fraud</h4>
+                    <p>Detects known historical malicious patterns.</p>
+                </div>
+                <div class="engine-card">
+                    <h4>Device</h4>
+                    <p>Identifies hardware and network anomalies.</p>
+                </div>
+                <div class="engine-card">
+                    <h4>Merchant</h4>
+                    <p>Evaluates the risk profile of the receiving entity.</p>
+                </div>
+                <div class="engine-card">
+                    <h4>Population</h4>
+                    <p>Compares the user against their demographic cohort.</p>
+                </div>
+                <div class="engine-card">
+                    <h4>Sequence</h4>
+                    <p>Looks for illogical progression of account actions.</p>
+                </div>
+                <div class="engine-card">
+                    <h4>Graph</h4>
+                    <p>Maps connections to known bad actors in the network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Engineering Challenges -->
+    <section class="section bg-light border-top border-bottom">
+        <div class="container">
+            <div class="grid grid-2">
+                <div class="fade-up">
+                    <div class="label text-accent">Implementation</div>
+                    <h2 class="section-title">The Engineering Effort</h2>
+                    <p class="section-text">What we overcame to build this system in 36 hours.</p>
+                </div>
+                
+                <div class="challenges-list fade-up delay-1">
+                    <div class="challenge-item">
+                        <h4>Real-time Knowledge Engine</h4>
+                        <p>Graph traversals usually take seconds. We built an in-memory architecture to fetch historical context in under 10ms to meet payment SLAs.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Coordinating Seven Models</h4>
+                        <p>Running complex models sequentially causes unacceptable latency. We implemented a highly concurrent orchestration layer where models fire asynchronously.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Evidence Normalization</h4>
+                        <p>How do you compare an anomaly score (-1 to 1) with a probability (0 to 1) and a PageRank metric? We engineered a mathematical fusion layer into a unified vector space.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Explainability</h4>
+                        <p>Banks cannot trust black boxes. AFIL translates raw scores into human-readable narratives, explaining exactly which engines agreed and which conflicted.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Replay Architecture</h4>
+                        <p>Data science requires "time travel". We built a mechanism to accurately reconstruct the exact database state and graph from months ago to replay transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Everything We Built -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center fade-up mb-8">
+                <div class="label text-accent">Ecosystem</div>
+                <h2 class="section-title">Capabilities Delivered</h2>
+                <p class="section-text mx-auto">More than just an API, we built a complete investigative suite.</p>
+            </div>
+            
+            <div class="capabilities-grid fade-up delay-1">
+                <div class="cap-card">
+                    <h4>Live Payment Simulator</h4>
+                    <p>Inject real-time traffic to watch the AI evaluate transactions live.</p>
+                </div>
+                <div class="cap-card">
+                    <h4>Graph Explorer</h4>
+                    <p>Visualize hidden fraud rings and network communities instantly.</p>
+                </div>
+                <div class="cap-card">
+                    <h4>Customer & Merchant Intelligence</h4>
+                    <p>Instant, 360-degree behavioural profiles for every entity.</p>
+                </div>
+                <div class="cap-card">
+                    <h4>Business Policy Engine</h4>
+                    <p>A deterministic override switch for business operators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section text-center bg-light border-top">
+        <div class="container fade-up">
+            <h2 class="section-title">We've explained how AFIL thinks.</h2>
+            <p class="section-text mx-auto">Now let's watch it think.</p>
+            <div class="mt-8">
+                <a href="http://localhost:3000/demo" class="btn btn-dark btn-lg">Experience Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="text-sm text-gray">Built by Team Byte Busters • Quantum Arena Hackathon</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
